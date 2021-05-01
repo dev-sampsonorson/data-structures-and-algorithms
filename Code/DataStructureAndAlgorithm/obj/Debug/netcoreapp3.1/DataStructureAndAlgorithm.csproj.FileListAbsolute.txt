@@ -1,0 +1,13 @@
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\DataStructureAndAlgorithm.exe
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\DataStructureAndAlgorithm.deps.json
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\DataStructureAndAlgorithm.runtimeconfig.json
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\DataStructureAndAlgorithm.runtimeconfig.dev.json
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\DataStructureAndAlgorithm.dll
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\DataStructureAndAlgorithm.pdb
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.csprojAssemblyReference.cache
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.AssemblyInfoInputs.cache
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.AssemblyInfo.cs
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.csproj.CoreCompileInputs.cache
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.dll
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.pdb
+D:\WS\Learning\Master the Coding Interview Data Structures + Algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.genruntimeconfig.cache

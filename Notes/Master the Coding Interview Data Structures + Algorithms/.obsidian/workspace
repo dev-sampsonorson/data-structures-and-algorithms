@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "b04aba7cf79f63f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "66182337738b842c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "3. How to Solve Coding Problems/4. Exercise - Google Interview.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13c23cbccface5e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a6eaf6da66bb17e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad0d4f1b0dd9e1c5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a34f12e2e2eabf7b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "heap",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a5c4b32b785fc7ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a8f42f4a7b85eab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0395e475807114a4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3. How to Solve Coding Problems/4. Exercise - Google Interview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "66182337738b842c",
+  "lastOpenFiles": [
+    "3. How to Solve Coding Problems/4. Exercise - Google Interview.md",
+    "2. Big O/7. Simplifying Big O.md",
+    "2. Big O/2. What is good code.md",
+    "2. Big O/12. Space Complexity.md",
+    "2. Big O/1. Setting Up Your Environment.md",
+    "3. How to Solve Coding Problems/cheatsheet.pdf",
+    "3. How to Solve Coding Problems/5. Exercise - Google Interview.md",
+    "3. How to Solve Coding Problems/4. Problem Solving Guide.md",
+    "3. How to Solve Coding Problems/1. Overview.md",
+    "3. How to Solve Coding Problems/2. What Are Companies Looking For.md"
+  ]
+}
