@@ -54,11 +54,11 @@ namespace DataStructureAndAlgorithm.Solutions {
             Dictionary<string, bool> lookup = new Dictionary<string, bool>();
 
             for (int i = 0; i < arr1.Length; i++)
-                lookup.Add(arr1[i], false);
+                lookup.Add(arr1[i], true);
 
             for (int i = 0; i < arr2.Length; i++) {
                 if (!lookup.ContainsKey(arr2[i]))
-                    lookup.Add(arr2[i], false);
+                    lookup.Add(arr2[i], true);
                 else
                     return true;
             }
