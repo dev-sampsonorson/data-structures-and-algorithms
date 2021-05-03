@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using DataStructureAndAlgorithm.Core;
+using System.Linq;
 
 namespace DataStructureAndAlgorithm.Solutions {
 
@@ -28,7 +29,9 @@ namespace DataStructureAndAlgorithm.Solutions {
 
             string[] array3 = new string[] { "a", "b", "c", "x" };
             string[] array4 = new string[] { "z", "y", "x" };
-            bool result = Code2(array3, array4);
+            //bool result = Code2(array3, array4);
+
+            bool result = Code3(array1, array2);
 
             Console.WriteLine($"Result: {result}");
 
@@ -61,6 +64,10 @@ namespace DataStructureAndAlgorithm.Solutions {
             }
 
             return false;
+        }
+
+        public bool Code3(string[] arr1, string[] arr2) {
+            return arr1.Any(item => arr2.Contains(item));
         }
     }
 }

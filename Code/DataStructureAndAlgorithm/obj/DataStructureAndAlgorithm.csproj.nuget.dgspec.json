@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WS\\Learning\\Master the Coding Interview Data Structures + Algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj": {}
+    "D:\\WS\\Learning\\data-structures-and-algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj": {}
   },
   "projects": {
-    "D:\\WS\\Learning\\Master the Coding Interview Data Structures + Algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj": {
+    "D:\\WS\\Learning\\data-structures-and-algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WS\\Learning\\Master the Coding Interview Data Structures + Algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj",
+        "projectUniqueName": "D:\\WS\\Learning\\data-structures-and-algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj",
         "projectName": "DataStructureAndAlgorithm",
-        "projectPath": "D:\\WS\\Learning\\Master the Coding Interview Data Structures + Algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj",
+        "projectPath": "D:\\WS\\Learning\\data-structures-and-algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj",
         "packagesPath": "C:\\Users\\OrsonXeon\\.nuget\\packages\\",
-        "outputPath": "D:\\WS\\Learning\\Master the Coding Interview Data Structures + Algorithms\\Code\\DataStructureAndAlgorithm\\obj\\",
+        "outputPath": "D:\\WS\\Learning\\data-structures-and-algorithms\\Code\\DataStructureAndAlgorithm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d7OZ1jGepKwbxevfx/Bzwcrp9lI6uzVMiZsMhzTiL+WQynt75OLX4/A+2n4hZbJZFHj+DMkwOc0G3yi5yCTVRg==",
+  "dgSpecHash": "NKzbAvTp1qI2VhGX6ixVNbqqnikDpWg/LF+SjTz7JvuiEg2CtEoEGjV7RDkRijdcUcAItcefko/g/Uy01nf25w==",
   "success": true,
-  "projectFilePath": "D:\\WS\\Learning\\Master the Coding Interview Data Structures + Algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj",
+  "projectFilePath": "D:\\WS\\Learning\\data-structures-and-algorithms\\Code\\DataStructureAndAlgorithm\\DataStructureAndAlgorithm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OrsonXeon\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512",
     "C:\\Users\\OrsonXeon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
