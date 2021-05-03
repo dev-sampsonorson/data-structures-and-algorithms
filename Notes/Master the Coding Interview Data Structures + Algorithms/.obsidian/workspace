@@ -4,12 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "66182337738b842c",
+        "id": "9b34a818996d2e35",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "3. How to Solve Coding Problems/cheatsheet.pdf"
+            "file": "4. Data Structures - Introduction/2. How Computers Store Data.md",
+            "mode": "source"
           }
         }
       }
@@ -67,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. How to Solve Coding Problems/cheatsheet.pdf",
+                "file": "4. Data Structures - Introduction/2. How Computers Store Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "66182337738b842c",
+  "active": "9b34a818996d2e35",
   "lastOpenFiles": [
-    "3. How to Solve Coding Problems/cheatsheet.pdf",
     "Untitled.md",
+    "4. Data Structures - Introduction/1. What is a Data Structure.md",
+    "4. Data Structures - Introduction/1. Overview.md",
+    "4. Data Structures - Introduction/2. What is a Data Structure.md",
+    "3. How to Solve Coding Problems/cheatsheet.pdf",
     "3. How to Solve Coding Problems/4. Exercise - Google Interview.md",
     "2. Big O/7. Simplifying Big O.md",
     "2. Big O/2. What is good code.md",
     "2. Big O/12. Space Complexity.md",
-    "2. Big O/1. Setting Up Your Environment.md",
-    "3. How to Solve Coding Problems/5. Exercise - Google Interview.md",
-    "3. How to Solve Coding Problems/4. Problem Solving Guide.md",
-    "3. How to Solve Coding Problems/1. Overview.md"
+    "2. Big O/1. Setting Up Your Environment.md"
   ]
 }
