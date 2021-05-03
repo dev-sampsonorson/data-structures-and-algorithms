@@ -14,6 +14,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(2, "Print All Pairs"),
             new SolutionInfo(3, "Boooooo"),
             new SolutionInfo(4, "Common terms in array"),
+            new SolutionInfo(5, "Has pair with sum"),
         };
 
         static void Main(string[] args)

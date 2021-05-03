@@ -38,7 +38,8 @@ namespace DataStructureAndAlgorithm.Solutions {
         }
 
 
-        // O(a*b) 
+        // O(a*b) - Time Complexity 
+        // O(1) - Space Complexity
         public bool Code1(string[] arr1, string[] arr2) {
             for (int i = 0; i < arr1.Length; i++) {
                 for (int j = 0; j < arr2.Length; j++) {
@@ -49,13 +50,17 @@ namespace DataStructureAndAlgorithm.Solutions {
 
             return false;
         }
-        
+
+        // O(a+b) - Time Complexity
+        // O(a) - Space Complexity
         public bool Code2(string[] arr1, string[] arr2) {
             Dictionary<string, bool> lookup = new Dictionary<string, bool>();
 
+            // MapArrayToObject()
             for (int i = 0; i < arr1.Length; i++)
                 lookup.Add(arr1[i], true);
 
+            // CompareArrayToObject()
             for (int i = 0; i < arr2.Length; i++) {
                 if (!lookup.ContainsKey(arr2[i]))
                     lookup.Add(arr2[i], true);

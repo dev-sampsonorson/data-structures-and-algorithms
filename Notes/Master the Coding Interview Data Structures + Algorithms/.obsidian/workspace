@@ -7,10 +7,9 @@
         "id": "66182337738b842c",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "3. How to Solve Coding Problems/5. Exercise - Interview Question.md",
-            "mode": "source"
+            "file": "3. How to Solve Coding Problems/cheatsheet.pdf"
           }
         }
       }
@@ -68,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. How to Solve Coding Problems/5. Exercise - Interview Question.md",
+                "file": "3. How to Solve Coding Problems/cheatsheet.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,13 +87,13 @@
   },
   "active": "66182337738b842c",
   "lastOpenFiles": [
+    "3. How to Solve Coding Problems/cheatsheet.pdf",
     "Untitled.md",
     "3. How to Solve Coding Problems/4. Exercise - Google Interview.md",
     "2. Big O/7. Simplifying Big O.md",
     "2. Big O/2. What is good code.md",
     "2. Big O/12. Space Complexity.md",
     "2. Big O/1. Setting Up Your Environment.md",
-    "3. How to Solve Coding Problems/cheatsheet.pdf",
     "3. How to Solve Coding Problems/5. Exercise - Google Interview.md",
     "3. How to Solve Coding Problems/4. Problem Solving Guide.md",
     "3. How to Solve Coding Problems/1. Overview.md"
