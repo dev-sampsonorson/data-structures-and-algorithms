@@ -41,6 +41,8 @@ namespace DataStructureAndAlgorithm.Solutions {
             private int[] array;
             private int sum;
 
+            public string Description => "Works with sorted and unsorted data";
+
             public bool Implementation(Input5 input) {
                 this.array = input.Data;
                 this.sum = input.Sum;
@@ -61,6 +63,8 @@ namespace DataStructureAndAlgorithm.Solutions {
 
             private int[] array;
             private int sum;
+
+            public string Description => "Works with sorted and unsorted data";
 
             public bool Implementation(Input5 input) {
                 this.array = input.Data;
@@ -83,6 +87,8 @@ namespace DataStructureAndAlgorithm.Solutions {
 
             private int[] array;
             private int sum;
+
+            public string Description => "This solution doesn't work with unsorted data";
 
             public bool Implementation(Input5 input) {
                 this.array = input.Data;

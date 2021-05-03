@@ -14,7 +14,7 @@ namespace DataStructureAndAlgorithm.Core {
 
                 ISolve<TInput, bool> solveInstance = Activator.CreateInstance(t) as ISolve<TInput, bool>;
 
-                Console.WriteLine($"{solveInstance.GetType().Name}");
+                Console.WriteLine($"{solveInstance.GetType().Name}: {solveInstance.Description}");
                 for (int i = 0; i < inputs.Count; i++) {
                     bool result = solveInstance.Implementation(inputs[i]);
                     Console.WriteLine($"Input {i + 1}, Result: {result}");
