@@ -18,47 +18,13 @@ namespace DataStructureAndAlgorithm.Solutions {
                 new Input5(new int[] { 1, 2, 3, 9 }, 8),
                 new Input5(new int[] { 1, 2, 4, 4 }, 8),
                 new Input5(new int[] { 1, 2, 3, 4, 6, 7 }, 9),
+
+                // Third doesn't work with this unsorted
                 new Input5(new int[] { 6, 4, 3, 2, 1, 7 }, 9),
             };
 
             this.ExecuteSolves<Input5>(inputs);
-
-            /*List<ISolve<Input5, bool>> solves = new List<ISolve<Input5, bool>> {
-                new First(),
-                new Second(),
-                new Third()
-            };
-
-            for (int j = 0; j < solves.Count; j++) {
-                Console.WriteLine($"{solves[j].GetType().Name}");
-                for (int i = 0; i < inputs.Count; i++) {
-                    bool result = solves[j].Implementation(inputs[i]);
-                    Console.WriteLine($"Input {i + 1}, Result: {result}");
-                }
-                Console.WriteLine();
-                Console.WriteLine();
-
-            }*/
         }
-
-        /*private void ExecuteSolves<TInput>(ISolution instance, List<TInput> inputs) where TInput : class, IInput {
-            Type[] types = instance.GetType().GetNestedTypes(BindingFlags.NonPublic);
-
-            foreach (Type t in types) {
-                if (t.FindInterfaces((Type t, Object o) => t.Name.StartsWith(o.ToString()), "ISolve").Length <= 0) 
-                    continue;
-
-                ISolve<TInput, bool> solveInstance = Activator.CreateInstance(t) as ISolve<TInput, bool>;
-
-                Console.WriteLine($"{solveInstance.GetType().Name}");
-                for (int i = 0; i < inputs.Count; i++) {
-                    bool result = solveInstance.Implementation(inputs[i]);
-                    Console.WriteLine($"Input {i + 1}, Result: {result}");
-                }
-                Console.WriteLine();
-                Console.WriteLine();
-            }
-        }*/
 
         private class Input5 : IInput {
             public int[] Data;
