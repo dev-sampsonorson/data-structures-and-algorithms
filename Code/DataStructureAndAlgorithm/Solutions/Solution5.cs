@@ -23,7 +23,7 @@ namespace DataStructureAndAlgorithm.Solutions {
                 new Input5(new int[] { 6, 4, 3, 2, 1, 7 }, 9),
             };
 
-            this.ExecuteSolves<Input5>(inputs);
+            this.ExecuteSolves<Input5, bool>(inputs);
         }
 
         private class Input5 : IInput {

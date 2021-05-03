@@ -15,6 +15,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(3, "Boooooo"),
             new SolutionInfo(4, "Common terms in array"),
             new SolutionInfo(5, "Has pair with sum"),
+            new SolutionInfo(6, "Integer overflow"),
         };
 
         static void Main(string[] args)
