@@ -16,6 +16,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(4, "Common terms in array"),
             new SolutionInfo(5, "Has pair with sum"),
             new SolutionInfo(6, "Integer overflow"),
+            new SolutionInfo(7, "Array tryout"),
         };
 
         static void Main(string[] args)
@@ -27,8 +28,10 @@ namespace DataStructureAndAlgorithm
 
             Console.WriteLine();
             Console.WriteLine("Choose a solution number:");
-            
+
             int.TryParse(Console.ReadLine(), out int solutionNumber);
+            Console.WriteLine("------------------------------------------------------");
+            Console.WriteLine();
 
 
             // Get Solution
