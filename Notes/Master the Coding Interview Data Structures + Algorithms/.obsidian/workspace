@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "5. Arrays/1. Introduction.md",
+            "file": "5. Arrays/2. Static vs Dynamic Arrays.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. Arrays/1. Introduction.md",
+                "file": "5. Arrays/2. Static vs Dynamic Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "9b34a818996d2e35",
   "lastOpenFiles": [
-    "5. Arrays/1. Introduction.md",
     "Untitled.md",
+    "5. Arrays/1. Introduction.md",
     "4. Data Structures - Introduction/1. What is a Data Structure.md",
     "4. Data Structures - Introduction/1. Overview.md",
     "4. Data Structures - Introduction/2. What is a Data Structure.md",
