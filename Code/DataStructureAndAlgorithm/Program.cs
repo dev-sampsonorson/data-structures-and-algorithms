@@ -20,6 +20,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(8, "My array implementation"),
             new SolutionInfo(9, "Reverse string"),
             new SolutionInfo(10, "Merge sorted array"),
+            new SolutionInfo(11, "Longest word"),
         };
 
         static void Main(string[] args)
