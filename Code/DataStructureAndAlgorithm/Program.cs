@@ -17,6 +17,9 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(5, "Has pair with sum"),
             new SolutionInfo(6, "Integer overflow"),
             new SolutionInfo(7, "Array tryout"),
+            new SolutionInfo(8, "My array implementation"),
+            new SolutionInfo(9, "Reverse string"),
+            new SolutionInfo(10, "Merge sorted array"),
         };
 
         static void Main(string[] args)

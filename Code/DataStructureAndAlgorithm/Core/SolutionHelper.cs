@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataStructureAndAlgorithm.Core {
     public static class SolutionHelper {
-        public static void ExecuteSolves<TInput, TReturn>(this ISolution instance, List<TInput> inputs) where TInput : class, IInput {
+        public static void ExecuteSolves<TInput, TReturn>(this ISolution instance, List<TInput> inputs, Action<TReturn> callback = null) where TInput : class, IInput {
             Type[] types = instance.GetType().GetNestedTypes(BindingFlags.NonPublic);
 
             foreach (Type t in types) {
@@ -30,7 +30,9 @@ namespace DataStructureAndAlgorithm.Core {
 
                 for (int i = 0; i < result.Length; i++) {
                     Console.WriteLine($"Input {i + 1}, Result: {result[i]}");
+                    if (callback != null) callback.Invoke(result[i]);
                 }
+
 
 
 
