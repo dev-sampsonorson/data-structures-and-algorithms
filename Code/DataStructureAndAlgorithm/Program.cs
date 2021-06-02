@@ -21,13 +21,15 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(9, "Reverse string"),
             new SolutionInfo(10, "Merge sorted array"),
             new SolutionInfo(11, "Longest word"),
+            new SolutionInfo(12, "Two sum"),
+            new SolutionInfo(13, "Maximum Subarray"),
         };
 
         static void Main(string[] args)
         {
 
             foreach(var s in solutionInfoList) {
-                Console.WriteLine($"{s.Number}: {s.Description}");
+                Console.WriteLine($"{s.Number, -3}: {s.Description}");
             }
 
             Console.WriteLine();

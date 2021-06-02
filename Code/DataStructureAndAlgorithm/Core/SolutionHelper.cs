@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
+using System.Linq;
+using System.Collections;
 
 namespace DataStructureAndAlgorithm.Core {
     public static class SolutionHelper {
@@ -29,7 +31,14 @@ namespace DataStructureAndAlgorithm.Core {
                 }
 
                 for (int i = 0; i < result.Length; i++) {
-                    Console.WriteLine($"Input {i + 1}, Result: {result[i]}");
+                    Type resultType = result[i].GetType();
+
+                    if (resultType.IsArray)
+                        DisplayArrayResult<TReturn>(i, result[i] as Array);
+
+                    if (resultType.IsValueType)
+                        DisplayValueTypeResult<TReturn>(i, result[i]);
+
                     if (callback != null) callback.Invoke(result[i]);
                 }
 
@@ -39,6 +48,20 @@ namespace DataStructureAndAlgorithm.Core {
                 Console.WriteLine();
                 Console.WriteLine();
             }
+        }
+
+        private static void DisplayArrayResult<TResult>(int inputIndex, Array result) {
+
+            Console.Write($"Input {inputIndex + 1}, Result: ");
+            Console.Write("[");
+            Console.Write($"{string.Join(", ", result.Cast<object>())}");
+            Console.Write("]");
+            Console.WriteLine();
+        }
+
+        private static void DisplayValueTypeResult<TResult>(int inputIndex, TResult result){
+            Console.WriteLine($"Input {inputIndex + 1}, Result: {result}");
+
         }
     }
 }
