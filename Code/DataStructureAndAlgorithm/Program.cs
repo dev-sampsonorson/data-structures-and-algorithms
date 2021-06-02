@@ -25,6 +25,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(13, "Maximum Subarray"),
             new SolutionInfo(14, "Move Zeroes"),
             new SolutionInfo(15, "Contains Duplicate"),
+            new SolutionInfo(16, "Rotate Array"),
         };
 
         static void Main(string[] args)
