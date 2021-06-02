@@ -24,6 +24,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(12, "Two sum"),
             new SolutionInfo(13, "Maximum Subarray"),
             new SolutionInfo(14, "Move Zeroes"),
+            new SolutionInfo(15, "Contains Duplicate"),
         };
 
         static void Main(string[] args)
