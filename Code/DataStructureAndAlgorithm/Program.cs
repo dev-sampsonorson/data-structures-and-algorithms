@@ -23,6 +23,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(11, "Longest word"),
             new SolutionInfo(12, "Two sum"),
             new SolutionInfo(13, "Maximum Subarray"),
+            new SolutionInfo(14, "Move Zeroes"),
         };
 
         static void Main(string[] args)
