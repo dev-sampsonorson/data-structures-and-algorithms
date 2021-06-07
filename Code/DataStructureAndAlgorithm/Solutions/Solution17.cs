@@ -16,7 +16,7 @@ namespace DataStructureAndAlgorithm.Solutions {
             public string Description => "First solution";
 
             public ReturnVoid Implementation(InputVoid input) {
-                var ht = new HashTable(50);
+                var ht = new HashTable<string, int>(50);
 
                 ht.Set("grapes", 10000);
                 ht.Set("apples", 54);
@@ -35,41 +35,40 @@ namespace DataStructureAndAlgorithm.Solutions {
             }
         }
 
-        private class HashTable {
+        private class HashTable<TKey, TValue> {
 
-            List<object[]>[] _map;
+            List<(TKey Key, TValue Value)>[] _map;
 
             public HashTable(int size) {
-                this._map = new List<object[]>[size];
+                this._map = new List<(TKey, TValue)>[size];
             }
 
-            public void Set(string key, object value) {
+            public void Set(TKey key, TValue value) {
                 int address = HashFunction(key);
 
                 if (_map[address] == null)
-                    _map[address] = new List<object[]>();
+                    _map[address] = new List<(TKey, TValue)>();
 
-                _map[address].Add(new[] { key, value });
+                _map[address].Add((key, value));
 
             }
 
-            public object Get(string key) {
+            public object Get(TKey key) {
                 int address = HashFunction(key);
 
                 if (_map[address] == null)
                     return null;
 
-                return _map[address].Find(item => (string)item[0] == key).ElementAt(1);
+                return _map[address].Find(item => item.Key.Equals(key)).Value;
             }
 
-            public List<string> Keys(List<string> keys = null, List<object[]> list = null) {
-                keys = keys ?? new List<string>();
+            public List<TKey> Keys(List<TKey> keys = null, List<(TKey Key, TValue Value)> list = null) {
+                keys = keys ?? new List<TKey>();
 
                 if (_map.Length == 0)
-                    return new List<string>();
+                    return new List<TKey>();
 
                 if (list == null) {
-                    Console.WriteLine("null");
                     foreach (var item in _map) {
                         if (item != null) {
                             keys = Keys(keys, item);
@@ -77,20 +76,21 @@ namespace DataStructureAndAlgorithm.Solutions {
                     }
                 } else {
                     foreach (var item in list) {
-                        keys.Add((string)item[0]);
+                        keys.Add(item.Key);
                     }
                 }                
 
                 return keys;
             }
 
-            private int HashFunction(string key) {
-                int hash = 0;
-                for(int i = 0; i < key.Length; i++) {
-                    hash = (hash + (int)key[i] * i) % _map.Length;
-                }
+            private int HashFunction(TKey key) {
+                return Math.Abs(key.GetHashCode() % _map.Length);
+                //int hash = 0;
+                //for(int i = 0; i < key.Length; i++) {
+                //    hash = (hash + (int)key[i] * i) % _map.Length;
+                //}
 
-                return hash;
+                //return hash;
             }
 
 

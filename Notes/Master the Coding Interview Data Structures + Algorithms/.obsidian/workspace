@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "9b34a818996d2e35",
+        "id": "71d779bab52844e5",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "6. Hash Tables/4. Hash Tables vs Arrays.md",
+            "file": "7. Linked Lists/1. What Is A Linked List.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6. Hash Tables/4. Hash Tables vs Arrays.md",
+                "file": "7. Linked Lists/1. What Is A Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9b34a818996d2e35",
+  "active": "71d779bab52844e5",
   "lastOpenFiles": [
+    "7. Linked Lists/1. What Is A Linked List.md",
+    "Resources/trsu6uhv8j0x1fhzx53a.png",
+    "7. Linked Lists/Untitled.md",
+    "6. Hash Tables/5. Review.md",
+    "6. Hash Tables/Untitled.md",
     "6. Hash Tables/4. Hash Tables vs Arrays.md",
     "6. Hash Tables/3. Hash Collisions.md",
     "6. Hash Tables/2. Hash Function.md",
     "6. Hash Tables/1. Introduction.md",
-    "6. Hash Tables/Untitled.md",
-    "5. Arrays/1. Introduction.md",
-    "5. Arrays/2. Static vs Dynamic Arrays.md",
-    "1. Getting More Interview/3. Resume Cheat Sheet.md",
-    "1. Getting More Interview/2. Resume.md",
-    "1. Getting More Interview/4. LinkedIn.md"
+    "5. Arrays/1. Introduction.md"
   ]
 }
