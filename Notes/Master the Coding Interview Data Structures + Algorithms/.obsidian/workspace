@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "5. Arrays/2. Static vs Dynamic Arrays.md",
+            "file": "6. Hash Tables/4. Hash Tables vs Arrays.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. Arrays/2. Static vs Dynamic Arrays.md",
+                "file": "6. Hash Tables/4. Hash Tables vs Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "9b34a818996d2e35",
   "lastOpenFiles": [
-    "5. Arrays/2. Static vs Dynamic Arrays.md",
+    "6. Hash Tables/4. Hash Tables vs Arrays.md",
+    "6. Hash Tables/3. Hash Collisions.md",
+    "6. Hash Tables/2. Hash Function.md",
+    "6. Hash Tables/1. Introduction.md",
+    "6. Hash Tables/Untitled.md",
     "5. Arrays/1. Introduction.md",
+    "5. Arrays/2. Static vs Dynamic Arrays.md",
     "1. Getting More Interview/3. Resume Cheat Sheet.md",
     "1. Getting More Interview/2. Resume.md",
-    "1. Getting More Interview/4. LinkedIn.md",
-    "1. Getting More Interview/5. Portfolio.md",
-    "1. Getting More Interview/6. Email.md",
-    "1. Getting More Interview/7. Email Template.md",
-    "1. Getting More Interview/9. When Should You Start Applying.md",
-    "1. Getting More Interview/8. Find Jobs.md"
+    "1. Getting More Interview/4. LinkedIn.md"
   ]
 }

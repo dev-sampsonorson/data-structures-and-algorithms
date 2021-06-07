@@ -60,12 +60,8 @@ namespace DataStructureAndAlgorithm.Solutions {
                 int moves = 0;
                 int item = nums[i];
 
-                //int item = nums[i];
-
                 while (moves < size) {
                     int p = (i + steps) % size;
-
-                    Console.WriteLine($"{item} to {p}");
 
                     if (!set.Contains(p)) {
                         int temp = nums[p];

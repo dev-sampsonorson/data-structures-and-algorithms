@@ -26,6 +26,8 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(14, "Move Zeroes"),
             new SolutionInfo(15, "Contains Duplicate"),
             new SolutionInfo(16, "Rotate Array"),
+            new SolutionInfo(17, "Hash Table"),
+            new SolutionInfo(18, "First Recurring Character"),
         };
 
         static void Main(string[] args)

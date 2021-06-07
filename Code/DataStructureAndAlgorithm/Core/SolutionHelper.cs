@@ -18,32 +18,43 @@ namespace DataStructureAndAlgorithm.Core {
                 TReturn[] result;
                 ISolve<TInput, TReturn> solveInstance = Activator.CreateInstance(t) as ISolve<TInput, TReturn>;
 
+                bool doesReturnValue = typeof(TReturn).Name != typeof(ReturnVoid).Name;
+
                 Console.WriteLine($"{solveInstance.GetType().Name}: {solveInstance.Description}");
 
-                if (interfaceTypes[0].GetGenericArguments()[0].Name == "Empty") {
+                if (interfaceTypes[0].GetGenericArguments()[0].Name == typeof(InputVoid).Name) {
                     result = new TReturn[1];
-                    result[0] = solveInstance.Implementation(null);
+
+                    if (doesReturnValue)
+                        result[0] = solveInstance.Implementation(null);
+                    else
+                        solveInstance.Implementation(null);
                 } else {
                     result = new TReturn[inputs.Count];
                     for (int i = 0; i < inputs.Count; i++) {
-                        result[i] = solveInstance.Implementation(inputs[i]);
+                        if (doesReturnValue)
+                            result[i] = solveInstance.Implementation(inputs[i]);
+                        else
+                            solveInstance.Implementation(inputs[i]);
                     }
                 }
 
-                for (int i = 0; i < result.Length; i++) {
-                    Type resultType = result[i].GetType();
+                if (doesReturnValue) {
+                    for (int i = 0; i < result.Length; i++) {
+                        Type resultType = result[i]?.GetType();
 
-                    if (resultType.IsArray)
-                        DisplayArrayResult<TReturn>(i, result[i] as Array);
+                        if (result[i] == null || resultType == null)
+                            DisplayNullResult<TReturn>(i);
 
-                    if (resultType.IsValueType)
-                        DisplayValueTypeResult<TReturn>(i, result[i]);
+                        if (resultType != null && resultType.IsArray)
+                            DisplayArrayResult<TReturn>(i, result[i] as Array);
 
-                    if (callback != null) callback.Invoke(result[i]);
+                        if (resultType != null && resultType.IsValueType)
+                            DisplayValueTypeResult<TReturn>(i, result[i]);
+
+                        if (callback != null) callback.Invoke(result[i]);
+                    }
                 }
-
-
-
 
                 Console.WriteLine();
                 Console.WriteLine();
@@ -61,6 +72,10 @@ namespace DataStructureAndAlgorithm.Core {
 
         private static void DisplayValueTypeResult<TResult>(int inputIndex, TResult result){
             Console.WriteLine($"Input {inputIndex + 1}, Result: {result}");
+        }
+
+        private static void DisplayNullResult<TResult>(int inputIndex) {
+            Console.WriteLine($"Input {inputIndex + 1}, Result: null");
 
         }
     }

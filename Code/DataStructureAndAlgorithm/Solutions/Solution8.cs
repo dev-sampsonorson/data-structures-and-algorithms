@@ -8,13 +8,13 @@ namespace DataStructureAndAlgorithm.Solutions {
     public class Solution8 : ISolution {
         public void Run() {
 
-            this.ExecuteSolves<Empty, bool>(null);
+            this.ExecuteSolves<InputVoid, bool>(null);
         }
 
-        private class First : ISolve<Empty, bool> {
+        private class First : ISolve<InputVoid, bool> {
             public string Description => "My array implementation";
 
-            public bool Implementation(Empty input) {
+            public bool Implementation(InputVoid input) {
                 MyArray<int> myArray = new MyArray<int>();
 
                 myArray.Add(2);

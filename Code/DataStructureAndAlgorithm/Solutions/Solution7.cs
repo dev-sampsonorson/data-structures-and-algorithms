@@ -6,13 +6,13 @@ using DataStructureAndAlgorithm.Core;
 namespace DataStructureAndAlgorithm.Solutions {
     public class Solution7 : ISolution {
         public void Run() {
-            this.ExecuteSolves<Empty, bool>(null);
+            this.ExecuteSolves<InputVoid, bool>(null);
         }
 
-        private class First : ISolve<Empty, bool> {
+        private class First : ISolve<InputVoid, bool> {
             public string Description => "Array tryout";
 
-            public bool Implementation(Empty input) {
+            public bool Implementation(InputVoid input) {
                 List<string> strings = new List<string> { "a", "b", "c", "d" };
                 // on a 32 bit system, meaning having 4 shelves to store the letter "a" in 0s and 1s
                 // 4 letters
