@@ -28,6 +28,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(16, "Rotate Array"),
             new SolutionInfo(17, "Hash Table"),
             new SolutionInfo(18, "First Recurring Character"),
+            new SolutionInfo(19, "Linked List"),
         };
 
         static void Main(string[] args)
