@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "7. Linked Lists/1. What Is A Linked List.md",
+            "file": "7. Linked Lists/3. Singly vs Doubly Linked List.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "7. Linked Lists/1. What Is A Linked List.md",
+                "file": "7. Linked Lists/3. Singly vs Doubly Linked List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "71d779bab52844e5",
   "lastOpenFiles": [
+    "7. Linked Lists/Untitled.md",
+    "7. Linked Lists/2. Doubly Linked Lists.md",
     "7. Linked Lists/1. What Is A Linked List.md",
     "Resources/trsu6uhv8j0x1fhzx53a.png",
-    "7. Linked Lists/Untitled.md",
     "6. Hash Tables/5. Review.md",
     "6. Hash Tables/Untitled.md",
     "6. Hash Tables/4. Hash Tables vs Arrays.md",
     "6. Hash Tables/3. Hash Collisions.md",
     "6. Hash Tables/2. Hash Function.md",
-    "6. Hash Tables/1. Introduction.md",
-    "5. Arrays/1. Introduction.md"
+    "6. Hash Tables/1. Introduction.md"
   ]
 }

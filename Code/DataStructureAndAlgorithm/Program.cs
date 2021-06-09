@@ -29,6 +29,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(17, "Hash Table"),
             new SolutionInfo(18, "First Recurring Character"),
             new SolutionInfo(19, "Linked List"),
+            new SolutionInfo(20, "Doubly Linked List"),
         };
 
         static void Main(string[] args)

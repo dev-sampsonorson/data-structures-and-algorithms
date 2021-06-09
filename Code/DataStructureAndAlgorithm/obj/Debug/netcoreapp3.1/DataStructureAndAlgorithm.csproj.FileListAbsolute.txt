@@ -24,3 +24,5 @@ D:\WS\Learning\data-structures-and-algorithms\Code\DataStructureAndAlgorithm\obj
 D:\WS\Learning\data-structures-and-algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.dll
 D:\WS\Learning\data-structures-and-algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.pdb
 D:\WS\Learning\data-structures-and-algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.genruntimeconfig.cache
+D:\WS\Learning\data-structures-and-algorithms\Code\DataStructureAndAlgorithm\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\WS\Learning\data-structures-and-algorithms\Code\DataStructureAndAlgorithm\obj\Debug\netcoreapp3.1\DataStructureAndAlgorithm.csproj.CopyComplete
