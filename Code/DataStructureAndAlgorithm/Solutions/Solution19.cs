@@ -28,7 +28,8 @@ namespace DataStructureAndAlgorithm.Solutions {
                 Console.WriteLine(JsonSerializer.Serialize(ll, options));
 
                 Utility.PrintArray<int>(ll.PrintList());
-                ll.Remove(4);
+                ll.Reverse();
+                //ll.Remove(4);
                 Utility.PrintArray<int>(ll.PrintList());
 
                 return null;
@@ -81,7 +82,7 @@ namespace DataStructureAndAlgorithm.Solutions {
             }
 
             public LinkedList<T> Insert(int index, T value) {
-                if (index < 0 || index >= this.Length) 
+                if (index < 0 || index >= this.Length)
                     throw new Exception("Linked List: index out of bounds");
 
                 if (index == 0) Prepend(value);
@@ -121,10 +122,29 @@ namespace DataStructureAndAlgorithm.Solutions {
                 return this;
             }
 
+            public LinkedList<T> Reverse() {
+                Node<T> first = this.Head;
+                Node<T> second = first.Next;
+
+                while (second != null) {
+                    Node<T> third = second.Next;
+
+                    second.Next = first;
+                    first = second;
+                    second = third;
+                }
+
+                this.Head.Next = null;
+                this.Tail = this.Head;
+                this.Head = first;
+
+                return this;
+            }
+
             public T[] PrintList() {
                 T[] array = new T[this.Length];
                 Node<T> currentNode = this.Head;
-                 
+
                 for (int i = 0; i < this.Length; i++) {
                     array[i] = currentNode.Value;
                     currentNode = currentNode.Next;
@@ -146,7 +166,7 @@ namespace DataStructureAndAlgorithm.Solutions {
                 if (index == counter)
                     return node;
 
-                if (node.Next != null) 
+                if (node.Next != null)
                     return TraverseToIndex(index, counter, node.Next);
 
                 return null;
