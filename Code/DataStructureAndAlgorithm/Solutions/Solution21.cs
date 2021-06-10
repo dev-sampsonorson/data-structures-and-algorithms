@@ -35,6 +35,30 @@ namespace DataStructureAndAlgorithm.Solutions {
             }
         }
 
+        private class Second : ISolve<InputVoid, ReturnVoid> {
+            public string Description => "Second solution";
+
+            public ReturnVoid Implementation(InputVoid input) {
+
+                var stack = new StackUsingArray<string>();
+                stack.Push("google");
+                stack.Push("Udemy");
+                stack.Push("Discord");
+                var options = new JsonSerializerOptions { MaxDepth = 10, WriteIndented = true };
+                Console.WriteLine(JsonSerializer.Serialize(stack, options));
+
+
+                Console.WriteLine($"{stack.Pop()}");
+                Console.WriteLine($"{stack.Pop()}");
+                Console.WriteLine($"{stack.Pop()}");
+                Console.WriteLine($"{stack.IsEmpty()}");
+
+
+
+                return null;
+            }
+        }
+
         private class Node<T> {
             public T Value { get; set; }
             public Node<T> Next { get; set; }
@@ -91,6 +115,38 @@ namespace DataStructureAndAlgorithm.Solutions {
 
             public bool IsEmpty() {
                 return Top == null;
+            }
+        }
+
+        private class StackUsingArray<T> {
+            public List<T> Nodes { get; private set; } = new List<T>();
+
+            public T Peek() {
+                if (Nodes.Count == 0)
+                    throw new Exception("Stack empty");
+
+                return Nodes[Nodes.Count - 1];
+            }
+
+            public StackUsingArray<T> Push(T value) {
+                Nodes.Add(value);
+
+                return this;
+            }
+
+            public T Pop() {
+                if (Nodes.Count == 0)
+                    throw new Exception("Stack empty");
+
+                int index = Nodes.Count - 1;
+                T item = Nodes[index];
+                Nodes.RemoveAt(index);
+
+                return item;
+            }
+
+            public bool IsEmpty() {
+                return Nodes.Count == 0;
             }
         }
     }
