@@ -31,6 +31,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(19, "Linked List"),
             new SolutionInfo(20, "Doubly Linked List"),
             new SolutionInfo(21, "Stack"),
+            new SolutionInfo(22, "Queue"),
         };
 
         static void Main(string[] args)
