@@ -30,6 +30,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(18, "First Recurring Character"),
             new SolutionInfo(19, "Linked List"),
             new SolutionInfo(20, "Doubly Linked List"),
+            new SolutionInfo(21, "Stack"),
         };
 
         static void Main(string[] args)
