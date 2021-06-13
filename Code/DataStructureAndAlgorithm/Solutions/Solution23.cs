@@ -126,8 +126,32 @@ namespace DataStructureAndAlgorithm.Solutions {
                 return node;
             }
 
-            public void Remove(T value) {
-                Node<T> node = this.Lookup(value);
+            public bool Remove(T value) {
+                if (this.Root == null)
+                    return false;
+
+                Node<T> parentNode = null;
+                Node<T> currentNode = this.Root;
+
+                while(true) {
+                    if (currentNode.Value.CompareTo(value) > 0) {
+                        parentNode = currentNode;
+                        currentNode = currentNode.Left;
+                    } else if (currentNode.Value.CompareTo(value) < 0) {
+                        parentNode = currentNode;
+                        currentNode = currentNode.Right;
+                    } else if (currentNode.Value.CompareTo(value) == 0) {
+                        if (currentNode.Right == null) {
+                            if (parentNode == null) {
+                                this.Root = currentNode.Left;
+                            } else {
+                                parentNode.Left = currentNode.Left;
+                            }
+                        } 
+                    }
+                }
+
+                return false;
             }
         }
     }
