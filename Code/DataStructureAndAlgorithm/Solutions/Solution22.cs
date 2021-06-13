@@ -14,7 +14,7 @@ namespace DataStructureAndAlgorithm.Solutions {
             public string Description => "First Implementation";
 
             public ReturnVoid Implementation(InputVoid input) {
-                var queue = new Queue<string>();
+                /*var queue = new Queue<string>();
                 queue.Enqueue("google");
                 queue.Enqueue("Udemy");
                 queue.Enqueue("Discord");
@@ -25,6 +25,28 @@ namespace DataStructureAndAlgorithm.Solutions {
                 Console.WriteLine($"{queue.Dequeue()}");
                 Console.WriteLine($"{queue.Dequeue()}");
                 Console.WriteLine($"{queue.Dequeue()}");
+                Console.WriteLine($"{queue.IsEmpty()}");
+                Console.WriteLine(JsonSerializer.Serialize(queue, options));*/
+
+                return null;
+            }
+        }
+
+        private class QueueUsingStacks : ISolve<InputVoid, ReturnVoid> {
+            public string Description => "Implementation of Queue using Stacks";
+
+            public ReturnVoid Implementation(InputVoid input) {
+                var queue = new QueueUsingStacks<string>();
+                queue.Enqueue("google");
+                queue.Enqueue("Udemy");
+                queue.Enqueue("Discord");
+                var options = new JsonSerializerOptions { MaxDepth = 10, WriteIndented = true };
+                Console.WriteLine(JsonSerializer.Serialize(queue, options));
+
+
+                Console.WriteLine($"{queue.Dequeue()}");
+                Console.WriteLine($"{queue.Dequeue()}");
+                //Console.WriteLine($"{queue.Dequeue()}");
                 Console.WriteLine($"{queue.IsEmpty()}");
                 Console.WriteLine(JsonSerializer.Serialize(queue, options));
 
@@ -88,6 +110,85 @@ namespace DataStructureAndAlgorithm.Solutions {
                 return this.Length == 0;
             }
 
+        }
+
+        private class QueueUsingStacks<T> {
+            public Stack<T> Left { get; private set; } = new Stack<T>();
+            public Stack<T> Right { get; private set; } = new Stack<T>();
+
+
+            public T Peek() {
+                if (!Left.IsEmpty())
+                    return this.Left.Peek();
+
+                if (!Right.IsEmpty()) {
+                    while (!Right.IsEmpty())
+                        Left.Push(Right.Pop());
+
+                    return this.Left.Peek();
+                }
+
+                return default(T);
+            }
+
+            public QueueUsingStacks<T> Enqueue(T value) {
+                while(!Left.IsEmpty())
+                    Right.Push(Left.Pop());
+
+                Right.Push(value);
+
+                return this;
+            }
+
+            public T Dequeue() {
+                while (!Right.IsEmpty())
+                    Left.Push(Right.Pop());
+
+                return Left.Pop();
+            }
+
+            public bool IsEmpty() {
+                if (!Left.IsEmpty())
+                    return false;
+
+                return this.Right.Length == 0;
+            }
+
+
+
+        }
+
+        private class Stack<T> {
+            public List<T> Nodes { get; private set; } = new List<T>();
+            public int Length { get { return this.Nodes.Count; } }
+
+            public T Peek() {
+                if (Nodes.Count == 0)
+                    throw new Exception("Stack empty");
+
+                return Nodes[Nodes.Count - 1];
+            }
+
+            public Stack<T> Push(T value) {
+                Nodes.Add(value);
+
+                return this;
+            }
+
+            public T Pop() {
+                if (Nodes.Count == 0)
+                    throw new Exception("Stack empty");
+
+                int index = Nodes.Count - 1;
+                T item = Nodes[index];
+                Nodes.RemoveAt(index);
+
+                return item;
+            }
+
+            public bool IsEmpty() {
+                return Nodes.Count == 0;
+            }
         }
     }
 }

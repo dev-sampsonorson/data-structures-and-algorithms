@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "8. Stacks + Queues/1. Introduction.md",
+            "file": "9. Trees/5. BST Pros and Cons.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8. Stacks + Queues/1. Introduction.md",
+                "file": "9. Trees/5. BST Pros and Cons.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "71d779bab52844e5",
   "lastOpenFiles": [
+    "9. Trees/Untitled.md",
+    "9. Trees/3. Binary Search Tree.md",
+    "9. Trees/2. Binary Trees.md",
+    "9. Trees/1. Introduction.md",
+    "8. Stacks + Queues/1. Introduction.md",
     "Untitled.md",
     "7. Linked Lists/1. What Is A Linked List.md",
     "7. Linked Lists/3. Singly vs Doubly Linked List.md",
     "7. Linked Lists/Untitled.md",
-    "7. Linked Lists/2. Doubly Linked Lists.md",
-    "Resources/trsu6uhv8j0x1fhzx53a.png",
-    "6. Hash Tables/5. Review.md",
-    "6. Hash Tables/Untitled.md",
-    "6. Hash Tables/4. Hash Tables vs Arrays.md",
-    "6. Hash Tables/3. Hash Collisions.md"
+    "7. Linked Lists/2. Doubly Linked Lists.md"
   ]
 }

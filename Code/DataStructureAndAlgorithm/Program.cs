@@ -32,6 +32,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(20, "Doubly Linked List"),
             new SolutionInfo(21, "Stack"),
             new SolutionInfo(22, "Queue"),
+            new SolutionInfo(23, "Binary Search Tree"),
         };
 
         static void Main(string[] args)
