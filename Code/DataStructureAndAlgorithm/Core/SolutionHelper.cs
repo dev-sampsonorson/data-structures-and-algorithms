@@ -7,6 +7,15 @@ using System.Collections;
 
 namespace DataStructureAndAlgorithm.Core {
     public static class SolutionHelper {
+
+        /// <summary>
+        /// Execute solves
+        /// </summary>
+        /// <typeparam name="TInput">Input type</typeparam>
+        /// <typeparam name="TReturn">Return type</typeparam>
+        /// <param name="instance">Solution instance</param>
+        /// <param name="inputs">List of inputs of TInput type</param>
+        /// <param name="callback">Callback that receives result of type TReturn</param>
         public static void ExecuteSolves<TInput, TReturn>(this ISolution instance, List<TInput> inputs, Action<TReturn> callback = null) where TInput : class, IInput {
             Type[] types = instance.GetType().GetNestedTypes(BindingFlags.NonPublic);
 

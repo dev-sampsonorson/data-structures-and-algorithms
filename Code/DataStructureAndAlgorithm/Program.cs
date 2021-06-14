@@ -33,6 +33,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(21, "Stack"),
             new SolutionInfo(22, "Queue"),
             new SolutionInfo(23, "Binary Search Tree"),
+            new SolutionInfo(24, "Graph"),
         };
 
         static void Main(string[] args)
