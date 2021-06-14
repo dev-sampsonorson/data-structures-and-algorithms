@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "9. Trees/5. BST Pros and Cons.md",
+            "file": "9. Trees/7. Binary Heap.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9. Trees/5. BST Pros and Cons.md",
+                "file": "9. Trees/7. Binary Heap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   "active": "71d779bab52844e5",
   "lastOpenFiles": [
     "9. Trees/Untitled.md",
+    "9. Trees/5. BST Pros and Cons.md",
     "9. Trees/3. Binary Search Tree.md",
     "9. Trees/2. Binary Trees.md",
     "9. Trees/1. Introduction.md",
@@ -96,7 +97,6 @@
     "Untitled.md",
     "7. Linked Lists/1. What Is A Linked List.md",
     "7. Linked Lists/3. Singly vs Doubly Linked List.md",
-    "7. Linked Lists/Untitled.md",
-    "7. Linked Lists/2. Doubly Linked Lists.md"
+    "7. Linked Lists/Untitled.md"
   ]
 }

@@ -24,12 +24,15 @@ namespace DataStructureAndAlgorithm.Solutions {
                 bst.Insert(170);
                 bst.Insert(15);
                 var options = new JsonSerializerOptions { MaxDepth = 10, WriteIndented = true };
-                Console.WriteLine(JsonSerializer.Serialize(bst, options));
 
 
                 Console.WriteLine($"Lookup value: {bst.Lookup(13)?.Value.ToString() ?? "NULL"}");
                 Console.WriteLine($"Min: {bst.Min()?.Value.ToString() ?? "NULL"}");
                 Console.WriteLine($"Max: {bst.Max()?.Value.ToString() ?? "NULL"}");
+
+                var kk = bst.Remove(170);
+
+                Console.WriteLine(JsonSerializer.Serialize(bst, options));
 
                 return null;
             }
@@ -133,7 +136,7 @@ namespace DataStructureAndAlgorithm.Solutions {
                 Node<T> parentNode = null;
                 Node<T> currentNode = this.Root;
 
-                while(true) {
+                while(currentNode != null) {
                     if (currentNode.Value.CompareTo(value) > 0) {
                         parentNode = currentNode;
                         currentNode = currentNode.Left;
@@ -145,9 +148,54 @@ namespace DataStructureAndAlgorithm.Solutions {
                             if (parentNode == null) {
                                 this.Root = currentNode.Left;
                             } else {
-                                parentNode.Left = currentNode.Left;
+                                // if parent > current value, make current
+                                // left child a child of parent
+                                if (parentNode.Value.CompareTo(currentNode.Value) > 0) {
+                                    parentNode.Left = currentNode.Left;
+                                } else if (parentNode.Value.CompareTo(currentNode.Value) < 0) {
+                                    parentNode.Right = currentNode.Left;
+                                }
                             }
-                        } 
+                        } else if (currentNode.Right.Left == null) {
+                            if (parentNode == null) {
+                                currentNode.Left.Right = this.Root.Right;
+                                this.Root = currentNode.Left;
+                            } else {
+                                currentNode.Right.Left = currentNode.Left;
+
+                                if (currentNode.Value.CompareTo(parentNode.Value) < 0) {
+                                    parentNode.Left = currentNode.Right;
+                                } else if (currentNode.Value.CompareTo(parentNode.Value) > 0) {
+                                    parentNode.Right = currentNode.Right;
+                                }
+                            }
+                        } else {
+                            Node<T> leftmost = currentNode.Right.Left;
+                            Node<T> leftmostParent = currentNode.Right;
+                            while (leftmost.Left != null) {
+                                leftmostParent = leftmost;
+                                leftmost = leftmost.Left;
+                            }
+
+                            // parent's left subtree is not leftmost's 
+                            // right subtree
+                            leftmostParent.Left = leftmost.Right;
+                            leftmost.Left = currentNode.Left;
+                            leftmost.Right = currentNode.Right;
+
+                            if (parentNode == null) {
+                                this.Root = leftmost;
+                            } else {
+                                if (currentNode.Value.CompareTo(parentNode.Value) < 0) {
+                                    parentNode.Left = leftmost;
+                                } else if (currentNode.Value.CompareTo(parentNode.Value) > 0) {
+                                    parentNode.Right = leftmost;
+                                }
+                            }
+                        }
+
+
+                        return true;
                     }
                 }
 
