@@ -35,6 +35,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(23, "Binary Search Tree"),
             new SolutionInfo(24, "Graph"),
             new SolutionInfo(25, "Factorial"),
+            new SolutionInfo(26, "Fibonacci"),
         };
 
         static void Main(string[] args)
