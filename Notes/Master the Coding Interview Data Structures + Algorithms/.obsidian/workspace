@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "9. Trees/7. Binary Heap.md",
+            "file": "9. Trees/8. Trie.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "9. Trees/7. Binary Heap.md",
+                "file": "9. Trees/8. Trie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
