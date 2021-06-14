@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "10. Graphs/1. Introduction.md",
+            "file": "11. Algorithm Recursion/2. Recursion Introduction.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10. Graphs/1. Introduction.md",
+                "file": "11. Algorithm Recursion/2. Recursion Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "71d779bab52844e5",
   "lastOpenFiles": [
+    "11. Algorithm Recursion/Untitled.md",
+    "9. Trees/8. Trie.md",
     "10. Graphs/1. Introduction.md",
     "10. Graphs/2. Graph Data.md",
     "10. Graphs/Untitled.md",
@@ -95,8 +97,6 @@
     "9. Trees/5. BST Pros and Cons.md",
     "9. Trees/3. Binary Search Tree.md",
     "9. Trees/2. Binary Trees.md",
-    "9. Trees/1. Introduction.md",
-    "8. Stacks + Queues/1. Introduction.md",
-    "Untitled.md"
+    "9. Trees/1. Introduction.md"
   ]
 }
