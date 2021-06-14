@@ -36,6 +36,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(24, "Graph"),
             new SolutionInfo(25, "Factorial"),
             new SolutionInfo(26, "Fibonacci"),
+            new SolutionInfo(27, "Reverse String with Recursion"),
         };
 
         static void Main(string[] args)

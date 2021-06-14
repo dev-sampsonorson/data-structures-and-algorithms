@@ -58,7 +58,7 @@ namespace DataStructureAndAlgorithm.Core {
                         if (resultType != null && resultType.IsArray)
                             DisplayArrayResult<TReturn>(i, result[i] as Array);
 
-                        if (resultType != null && resultType.IsValueType)
+                        if (resultType != null && (resultType.IsValueType || resultType.IsAssignableFrom(typeof(string))))
                             DisplayValueTypeResult<TReturn>(i, result[i]);
 
                         if (callback != null) callback.Invoke(result[i]);
