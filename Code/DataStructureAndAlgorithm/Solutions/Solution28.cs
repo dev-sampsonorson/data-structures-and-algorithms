@@ -23,7 +23,7 @@ namespace DataStructureAndAlgorithm.Solutions {
             public string Description => "First implementation";
 
             public int[] Implementation(Input28 input) {
-                int[] list = input.Items;
+                int[] list = input.Items.Clone() as int[];
 
                 int len = list.Length;
                 int lastIndex = len - 1;

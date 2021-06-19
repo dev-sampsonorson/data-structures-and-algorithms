@@ -38,6 +38,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(26, "Fibonacci"),
             new SolutionInfo(27, "Reverse String with Recursion"),
             new SolutionInfo(28, "Bubble Sort"),
+            new SolutionInfo(29, "Selection Sort"),
         };
 
         static void Main(string[] args)
