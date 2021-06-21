@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "12. Sorting/5. Merge Sort.md",
+            "file": "12. Sorting/7. Heap Sort.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "12. Sorting/5. Merge Sort.md",
+                "file": "12. Sorting/7. Heap Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,14 +89,14 @@
   "active": "71d779bab52844e5",
   "lastOpenFiles": [
     "12. Sorting/Untitled.md",
+    "12. Sorting/6. Quick Sort.md",
+    "12. Sorting/5. Merge Sort.md",
+    "12. Sorting/2. Bubble Sort.md",
     "12. Sorting/4. Insertion Sort.md",
     "12. Sorting/3. Selection Sort.md",
-    "12. Sorting/2. Bubble Sort.md",
     "12. Sorting/1. Introduction.md",
     "11. Algorithm Recursion/3. When To Use Recursion.md",
     "11. Algorithm Recursion/Untitled.md",
-    "11. Algorithm Recursion/2. Recursion Introduction.md",
-    "9. Trees/8. Trie.md",
-    "10. Graphs/1. Introduction.md"
+    "11. Algorithm Recursion/2. Recursion Introduction.md"
   ]
 }

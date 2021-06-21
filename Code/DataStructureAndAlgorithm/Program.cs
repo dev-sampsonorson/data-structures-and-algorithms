@@ -39,7 +39,9 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(27, "Reverse String with Recursion"),
             new SolutionInfo(28, "Bubble Sort"),
             new SolutionInfo(29, "Selection Sort"),
-            new SolutionInfo(30, "Selection Sort"),
+            new SolutionInfo(30, "Insertion Sort"),
+            new SolutionInfo(31, "Merge Sort"),
+            new SolutionInfo(32, "Quick Sort"),
         };
 
         static void Main(string[] args)
