@@ -17,55 +17,64 @@ namespace DataStructureAndAlgorithm.Core {
         /// <param name="inputs">List of inputs of TInput type</param>
         /// <param name="callback">Callback that receives result of type TReturn</param>
         public static void ExecuteSolves<TInput, TReturn>(this ISolution instance, List<TInput> inputs, Action<TReturn> callback = null) where TInput : class, IInput {
-            Type[] types = instance.GetType().GetNestedTypes(BindingFlags.NonPublic);
+            try {
+                Type[] types = instance.GetType().GetNestedTypes(BindingFlags.NonPublic);
 
-            foreach (Type t in types) {
-                Type[] interfaceTypes = t.FindInterfaces((Type t, Object o) => t.Name.StartsWith(o.ToString()), "ISolve");
-                if (interfaceTypes.Length <= 0)
-                    continue;
+                foreach (Type t in types) {
+                    Type[] interfaceTypes = t.FindInterfaces((Type t, Object o) => t.Name.StartsWith(o.ToString()), "ISolve");
+                    if (interfaceTypes.Length <= 0)
+                        continue;
 
-                TReturn[] result;
-                ISolve<TInput, TReturn> solveInstance = Activator.CreateInstance(t) as ISolve<TInput, TReturn>;
+                    TReturn[] result;
+                    ISolve<TInput, TReturn> solveInstance = Activator.CreateInstance(t) as ISolve<TInput, TReturn>;
 
-                bool doesReturnValue = typeof(TReturn).Name != typeof(ReturnVoid).Name;
+                    if (solveInstance == null)
+                        throw new Exception("Couldn't find solve");
 
-                Console.WriteLine($"{solveInstance.GetType().Name}: {solveInstance.Description}");
+                    bool doesReturnValue = typeof(TReturn).Name != typeof(ReturnVoid).Name;
 
-                if (interfaceTypes[0].GetGenericArguments()[0].Name == typeof(InputVoid).Name) {
-                    result = new TReturn[1];
+                    Console.WriteLine($"{solveInstance.GetType().Name}: {solveInstance.Description}");
 
-                    if (doesReturnValue)
-                        result[0] = solveInstance.Implementation(null);
-                    else
-                        solveInstance.Implementation(null);
-                } else {
-                    result = new TReturn[inputs.Count];
-                    for (int i = 0; i < inputs.Count; i++) {
+                    if (interfaceTypes[0].GetGenericArguments()[0].Name == typeof(InputVoid).Name) {
+                        result = new TReturn[1];
+
                         if (doesReturnValue)
-                            result[i] = solveInstance.Implementation(inputs[i]);
+                            result[0] = solveInstance.Implementation(null);
                         else
-                            solveInstance.Implementation(inputs[i]);
+                            solveInstance.Implementation(null);
+                    } else {
+                        result = new TReturn[inputs.Count];
+                        for (int i = 0; i < inputs.Count; i++) {
+                            if (doesReturnValue)
+                                result[i] = solveInstance.Implementation(inputs[i]);
+                            else
+                                solveInstance.Implementation(inputs[i]);
+                        }
                     }
-                }
 
-                if (doesReturnValue) {
-                    for (int i = 0; i < result.Length; i++) {
-                        Type resultType = result[i]?.GetType();
+                    if (doesReturnValue) {
+                        for (int i = 0; i < result.Length; i++) {
+                            Type resultType = result[i]?.GetType();
 
-                        if (result[i] == null || resultType == null)
-                            DisplayNullResult<TReturn>(i);
+                            if (result[i] == null || resultType == null)
+                                DisplayNullResult<TReturn>(i);
 
-                        if (resultType != null && resultType.IsArray)
-                            DisplayArrayResult<TReturn>(i, result[i] as Array);
+                            if (resultType != null && resultType.IsArray)
+                                DisplayArrayResult<TReturn>(i, result[i] as Array);
 
-                        if (resultType != null && (resultType.IsValueType || resultType.IsAssignableFrom(typeof(string))))
-                            DisplayValueTypeResult<TReturn>(i, result[i]);
+                            if (resultType != null && (resultType.IsValueType || resultType.IsAssignableFrom(typeof(string))))
+                                DisplayValueTypeResult<TReturn>(i, result[i]);
 
-                        if (callback != null) callback.Invoke(result[i]);
+                            if (callback != null) callback.Invoke(result[i]);
+                        }
                     }
-                }
 
+                    Console.WriteLine();
+                    Console.WriteLine();
+                }
+            } catch (Exception ex) {
                 Console.WriteLine();
+                Console.Write(ex.Message);
                 Console.WriteLine();
             }
         }

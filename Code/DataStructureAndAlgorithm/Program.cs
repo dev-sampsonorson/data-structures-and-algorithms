@@ -42,6 +42,7 @@ namespace DataStructureAndAlgorithm
             new SolutionInfo(30, "Insertion Sort"),
             new SolutionInfo(31, "Merge Sort"),
             new SolutionInfo(32, "Quick Sort"),
+            new SolutionInfo(33, "The Basketball Game"),
         };
 
         static void Main(string[] args)
